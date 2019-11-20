@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<title>
+	CUBE Team
+</title>
+<head>
+<span style="font-size:30px; cursor:pointer" onclick="openNav()"> &#9776;
+</span>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!--<link rel="stylesheet" type="text/css" href="font.css">-->
+
+</head>
+<body >
+
+	<div style="text-align: unset;">
+			<button id="roundButton" class="mi-imagen-abajo-derecha"> <img  src="icon\carro-de-la-compra.png" alt="x" /></button>
+	</div>
+
+
+
+
+<div id="panelFav" class="sidenav2">
+	<h1 class="panel-title">Favoritos</h1>
+	<div>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeFav()">&times;</a>
+	</div>
+	<div class="panel">
+		<div class="panel-screen panel-m">
+			<img src="img/imagen_de_prueba.jpg">
+			<div class="panel-title">
+				<h1>Again Tessa Violet</h1>
+			</div>
+			<p>
+				Ella es Tessa Violet, visita suk redes sociales en...
+			</p>
+			<a href="p">leer mas...</a>
+		</div>
+
+		
+		<div class="panel-screen panel-m">
+			<img src="img/imagen_de_prueba_3.png">
+			<div class="panel-title">
+				<h1>Tessa Violet</h1>
+			</div>
+			<p>
+				Ella es Tessa Violet, visita su redes sociales en...
+			</p>
+			<a href="p">leer mas...</a>
+		</div>
+
+		<div class="panel-screen panel-m">
+				<img src="img/imagen_de_prueba_4.jpg">
+				<div class="panel-title">
+					<h1>Tessa Violet</h1>
+				</div>
+				<p>
+					Ella es Tessa Violet, visita su redes sociales en...
+				</p>
+				<a href="p">leer mas...</a>
+			</div>
+
+		<div class="panel-screen panel-m">
+			<img src="img/imagen_de_prueba_3.png">
+			<div class="panel-title">
+				<h1>Violet Teesa</h1>
+			</div>
+			<p>
+				Ella es de nuevo Tessa Violet, no tenemos màs modelos
+			</p>
+			<a href="p">leer mas...</a>
+		</div>
+	</div>	
+	
+
+	
+
+</div>
+
+
+
+<div id="mySidenav" class="sidenav" >
+<div>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  	<div class="btn-group">
+  	<button class="button">Inicio</button>
+  	<button class="button">Buscar</button>
+
+ 	<button class="button">Mis compras</button>
+  	<button class="button" onclick="openFav()">Favoritos</button>
+	  <button class="button">Historial</button>
+	  <!--Debemos crear el script para verificar usuario-->
+	  <button class="button" onclick="openLogin()">Mi cuenta</button>
+	
+	  
+	</div>
+
+</div>
+</div>
+
+
+
+
+<div>
+<!--BUTTON-->
+<button id="btnAdd"class="button" type="button" onclick="addElement()">boton afuera!</button>
+</div>
+
+<!--TARJETAS DE CATEGORIAS (Con pregunta tipo: estas buscando algo?)-->
+<!--
+<div class="panel">
+	<div class="panel-screen panel-m">
+		<img src="img/imagen_de_prueba.jpg">
+		<div class="panel-title">
+			<h1>Again Tessa Violet</h1>
+		</div>
+		<p>
+			Ella es Tessa Violet, visita su redes sociales en...
+		</p>
+		<a href="p">leer mas...</a>
+	</div>
+
+	<div class="panel-screen panel-m">
+			<img src="img/imagen_de_prueba_2.jpg">
+			<div class="panel-title">
+				<h1>Tessa Violet</h1>
+			</div>
+			<p>
+				Ella es Tessa Violet, visita su redes sociales en...
+			</p>
+			<a href="p">leer mas...</a>
+		</div>
+</div>
+-->
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "230px";
+  //document.getElementById("mySidenav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+    //document.getElementById("mySidenav").style.height = "0px";
+}
+
+function openLogin() {
+  document.getElementById("panelLogin").style.width = "70%";
+  //document.getElementById("mySidenav").style.height = "100%";
+}
+function openFav() {
+  document.getElementById("panelFav").style.width = "350px";
+  document.getElementById("mySidenav").style.width = "0";
+  //document.getElementById("mySidenav").style.height = "100%";  
+}
+
+function closeFav() {
+  document.getElementById("panelFav").style.width = "0";
+  //document.getElementById("mySidenav").style.height = "100%";  
+}
+
+</script>
+   
+</body>
+</html> 
